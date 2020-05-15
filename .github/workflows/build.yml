@@ -1,4 +1,4 @@
-name: Ceedling CI
+name: build
 
 on:
   push:
@@ -16,6 +16,6 @@ jobs:
     - name: setup
       run: |
         sudo apt-get install ruby-full
-        gem install ceedling
+        sudo gem install ceedling
     - name: build
       run: ceedling release
