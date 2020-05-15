@@ -14,7 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: setup
-      run: sudo apt-get install ruby-full |
+      run: |
+        sudo apt-get install ruby-full
         gem install ceedling
     - name: build
       run: ceedling release
