@@ -18,7 +18,7 @@ typedef struct t_list* list;
 /// \brief creates a new list.
 list new(void);
 
-/// \brief adds a new element to the list.
+/// \brief adds a new element at the beginning of the list.
 void add(list list, int value);
 
 #endif // LIST_H
