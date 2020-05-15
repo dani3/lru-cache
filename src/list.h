@@ -21,4 +21,7 @@ list new(void);
 /// \brief adds a new element at the beginning of the list.
 void add(list list, int value);
 
+/// \brief removes the last element of the list.
+void pop(list list);
+
 #endif // LIST_H

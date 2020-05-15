@@ -20,7 +20,7 @@ jobs:
     - name: build
       run: ceedling release
     - name: upload executable
-        uses: actions/upload-artifact@v1
-        with:
-          name: lru-cache
-          path: build/release/lru-cache.out
+      uses: actions/upload-artifact@v1
+      with:
+        name: lru-cache
+        path: build/release/lru-cache.out
