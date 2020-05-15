@@ -19,3 +19,8 @@ jobs:
         sudo gem install ceedling
     - name: build
       run: ceedling release
+    - name: upload executable
+        uses: actions/upload-artifact@v1
+        with:
+          name: lru-cache
+          path: build/release/lru-cache.out
