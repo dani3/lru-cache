@@ -1,7 +1,7 @@
-#include "list.h"
+#include "cache.h"
 
 int main(int argc, char *argv[]) {
-  list list = new();
+  cache cache = new_cache(10);
 
   return 0;
 }
