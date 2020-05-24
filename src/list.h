@@ -20,10 +20,16 @@ typedef struct t_list* list;
 /// \brief creates a new list.
 list new_list(void);
 
+/// \brief deletes the list.
+void delete_list(list list);
+
 /// \brief adds a new element at the beginning of the list.
-void enqueue(list list, uint32_t key, uint32_t value);
+node enqueue(list list, uint32_t key, uint32_t value);
 
 /// \brief removes the last element of the list.
 void dequeue(list list);
+
+/// \brief removes the node from the list.
+void remove_node(list list, node* node);
 
 #endif // LIST_H
