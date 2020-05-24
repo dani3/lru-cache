@@ -5,7 +5,7 @@
 #include "list.h"
 
 struct t_entry {
-  struct entry* next;
+  node node;
   uint32_t key;
   uint32_t value;
 };
@@ -29,6 +29,9 @@ typedef struct t_cache* cache;
 
 /// \brief creates a new cache.
 cache new_cache(uint32_t capacity);
+
+/// \brief deletes the cache.
+void delete_cache(cache cache);
 
 void put(cache cache, uint32_t key, uint32_t value);
 

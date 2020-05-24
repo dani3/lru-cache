@@ -87,6 +87,11 @@ void dequeue(list list) {
   }
 }
 
+/** \brief removes a certain node from the list.
+ *
+ * \param list list to remove the node from.
+ * \param node node to be removed.
+ */
 void remove_node(list list, node* node) {
   if (((*node) == NULL) || (list->first == NULL)) {
     return;
